@@ -1,18 +1,16 @@
+import React from 'react';
 import Sidebar from './components/Sidebar/Sidebar';
-import './index.css';
 import Main from './Main';
-
-
-import React from 'react'
+import ContextProvider from "./context/context.jsx";
+import './index.css';
 
 const App = () => {
   return (
-<>
-<Sidebar/>
-<Main />
+    <ContextProvider>
+      <Sidebar />
+      <Main />
+    </ContextProvider>
+  );
+};
 
-
-</>
-  )
-}
-export default App
+export default App;
