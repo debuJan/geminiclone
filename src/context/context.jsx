@@ -1,5 +1,5 @@
 import { useRef, useState, useEffect } from "react";
-import { Context } from "./Context";
+import { Context } from "./context";
 import runChat from "../api/runchat";
 import { marked } from "marked";
 
